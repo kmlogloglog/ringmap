@@ -127,8 +127,8 @@
 
   // ---------- Map ----------
   const map = L.map("map", {zoomControl:false}).setView([37.975, 23.733], 13);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-    maxZoom: 19, attribution: "© OpenStreetMap © CARTO"
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, attribution: "© OpenStreetMap contributors"
   }).addTo(map);
   L.polygon(RING, {color:"#e07a1f", weight:3, fillColor:"#e07a1f", fillOpacity:0.18}).addTo(map);
 
